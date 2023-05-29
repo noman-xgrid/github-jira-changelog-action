@@ -132,7 +132,7 @@ async function main() {
     const jira = new Jira(config);
 
     const range = config.sourceControl.defaultRange;
-    console.log(`Getting range ${range.from}...${range.to} commit logs`);
+    console.log(`Getting range ${range.from}..${range.to} commit logs`);
     const commitLogs = await source.getCommitLogs('./', range);
     console.log('Found following commit logs:');
     console.log(commitLogs);
